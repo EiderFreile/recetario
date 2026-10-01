@@ -1,0 +1,17 @@
+{
+  "name": "Recetario de Cris y Eider",
+  "short_name": "Recetario",
+  "description": "Nuestras recetas, nuestro calendario de comidas y qué cocinar con lo que hay en casa 💕",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFF7F2",
+  "theme_color": "#FFC2DA",
+  "lang": "es",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

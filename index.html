@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Recetario de Cris y Eider</title>
+  <meta name="theme-color" content="#FFC2DA">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Recetario">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <div class="logo">🍲</div>
+      <div>
+        <h1>Recetario</h1>
+        <p>de Cris y Eider 💕</p>
+      </div>
+    </div>
+    <span id="sync" class="sync">…</span>
+  </header>
+
+  <main id="main"></main>
+
+  <nav class="tabbar">
+    <button class="tab-btn" data-action="tab" data-tab="recetas"><span class="ic">📖</span>Recetas</button>
+    <button class="tab-btn" data-action="tab" data-tab="calendario"><span class="ic">🗓️</span>Calendario</button>
+    <button class="tab-btn" data-action="tab" data-tab="cocino"><span class="ic">🧺</span>¿Qué cocino?</button>
+    <button class="tab-btn" data-action="tab" data-tab="ajustes"><span class="ic">⚙️</span>Ajustes</button>
+  </nav>
+
+  <!-- Hoja inferior (formularios, detalle, selector...) -->
+  <div id="sheetWrap" class="sheet-wrap">
+    <div class="backdrop" data-action="closeSheet"></div>
+    <div class="sheet" id="sheet"></div>
+  </div>
+
+  <!-- Diálogo de confirmación -->
+  <div id="dialog" class="dialog"></div>
+
+  <!-- Avisos -->
+  <div id="toast" class="toast"></div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
